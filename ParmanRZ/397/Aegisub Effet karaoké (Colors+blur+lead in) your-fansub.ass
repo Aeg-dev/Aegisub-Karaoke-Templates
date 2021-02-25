@@ -1,0 +1,69 @@
+[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 640
+PlayResY: 480
+ScaledBorderAndShadow: yes
+Last Style Storage: Default
+Video File: ..\..\youtube\The Cure - Dragon Hunters Song (whole song) - YouTube.WEBM
+Video Aspect Ratio: 0
+Video Zoom: 8
+Video Position: 807
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: Esub,Notepad,30,&H00FFFFFF,&H000000FF,&H32DD9E3F,&H007E4B00,-1,0,0,0,100,100,0,0,1,0,1,3,8,40,12,1
+Style: TRUSt,mikachan-puchiB,25,&H00FFFFFF,&H00000000,&H007800FF,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,8,10,10,30,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code once all,romaji_start=-1 kanji_start=-1 trans_start=-1 sky_index=0
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code line all,fxgroup.wind=(line.actor=="wind")
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code line all,fxgroup.time=(line.actor=="time")
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code line all,fxgroup.fade=(line.actor=="fade")
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code line all,fxgroup.splash=(line.actor=="splash")
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code line all,fxgroup.splash2=(line.actor=="splash2")
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code line all,fxgroup.splash3=(line.actor=="splash3")
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code line all,fxgroup.bubble=(line.actor=="bubble")
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code line all,fxgroup.sky=(line.actor=="sky")
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code line all,fxgroup.droplet=(line.actor=="droplet")
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code syl,falling_droplets=math.random(1,3)
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code once,function rsign() return 1-2*math.random(0,1) end
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code once,phi=0 dispx=0 dispy=0 function spiral_splash(spirals, org_x, org_y, rad, density) maxloop(spirals*density) if(j%density==1) then tag=string.format("\\org(%d,%d)",org_x+rsign()*math.random(10,20),org_y+rsign()*math.random(10,20)) phi=rsign()*math.random(40,140) dispx=rsign()*math.random(rad,rad+50) dispy=rsign()*math.random(rad,rad+50) if(math.random(0,5)<4) then phi=rsign()*math.random(120,480) dispx=math.floor(dispx/2.5) dispy=math.floor(dispy/2.5) end tag=tag..string.format("\\move(%d,%d,%d,%d)\\t(0.8,\\frz%d)",org_x,org_y,org_x+dispx,org_y+dispy,phi) end ci=j%density retime("line",20*ci,20*ci) return tag end
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code once,function inc_sky() sky_index=sky_index+1 return "" end
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code once,function move_bubble(x1) y1=490+math.random(100) y2=math.random(-70,50) x2=x1+math.random(-50,50) return string.format("\\move(%d,%d,%d,%d)",x1,y1,x2,y2) end
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code once,function randsize(lower, upper) size=math.random(lower,upper) return string.format("\\fscx%d\\fscy%d",size,size) end
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code once,function randangle(lower, upper) return string.format("\\frx%d\\fry%d",math.random(lower,upper),math.random(lower,upper)) end
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code once,function quiver_drop(dur) shakes=math.ceil(dur/100) tag=string.format("\\fscx%d\\fscy%d",math.random(80,120),math.random(100,150)) for x=1,shakes,1 do tag=tag..string.format("\\t(%d,%d,\\fscx%d\\fscy%d)",(x-1)*100,x*100,math.random(80,120),math.random(100,150)) end return tag end
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,code once,function quiver_ripple(dur) shakes=math.ceil(dur/100) tag=string.format("\\rnd%d",math.random(0,5)) for x=1,shakes,1 do tag=tag..string.format("\\t(%d,%d,\\rnd%d)",(x-1)*100,x*100,math.random(0,10)) end return tag end
+Comment: 1,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup fade,{\pos(0,0)\an7\1vc(&HB749D7&,&H891500&,&H0463FF&,&H891500&)\t(500,!$ldur-2000!,\1vc(&H616161&,&H616161&,&HB0B0B0&,&HB0B0B0&))\fad(0,1300)\p1}m -1 -1 l 641 -1 641 481 -1 481
+Comment: 2,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup time,{\pos(0,0)\an7\1vc(&H891500&,&HC13B68&,&H891500&,&H12C4FF&)\t(0,!math.floor($ldur/2)!,\1vc(&HFCCE71&,&HFCCE71&,&HFFF9CE&,&HFFF9CE&)\t(!math.floor($ldur/2)!,$ldur,\1vc(&HB749D7&,&H891500&,&H0463FF&,&H891500&))\fad(500,500)\p1}m -1 -1 l 641 -1 641 481 -1 481
+Comment: 4,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup time,{\org(320,520)\pos(320,140)\frz-60\t(\frz60)\bord10\blur10\3a&H33&\3c&H197BFF&\c&H26B5FF&\t(0,!math.floor($ldur/2.5)!,\c&H8EFFFB&\3c&H3FC6FF&)\t(!math.floor($ldur/1.5)!,$ldur,\c&H168FFF&\3c&H093AEE&)\fad(500,500)\p1}m 27 0 b 0 0 0 41 27 41 b 55 41 55 0 27 0
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template syl notext noblank fxgroup droplet,!maxloop(falling_droplets)!!retime("presyl",-920+20*j,-20+20*j)!{\p1\an8\pos(320,!math.floor((-5-30/j)/2)!)\t(1.5,\fscy30000)}m 0 0 l 1 1 0 0{\p0}\N{\fs!5+30/j!\bord2\be3\fnMS Mincho!quiver_drop(900)!\c!_G.ass_color(_G.HSV_to_RGB((180+$si*5)%360,0.2,0.9))!\3c!_G.ass_color(_G.HSV_to_RGB((180+$si*5)%360,1,1))!}・
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template syl notext noblank fxgroup droplet,!maxloop(math.random(2,3))!!retime("presyl",-20+j*20,580+j*20)!{\an2\move(320,!300+math.floor((5+18/j)/2)!,!320+math.random(-15,15)!,!300+math.floor((5+18/j)/2)!)\fs!5+18/j!\bord1\be2\fnMS Mincho!quiver_drop(600)!\c!_G.ass_color(_G.HSV_to_RGB((180+$si*5)%360,0.2,0.9))!\3c!_G.ass_color(_G.HSV_to_RGB((180+$si*5)%360,1,1))!\fad(0,300)}・\N{\r\p1\t(0,300,0.4,\fscy!5000+math.random(-1000,1000)!)\t(300,600,1.5\fscy100)}m 0 0 l 1 1 0 0
+Comment: 0,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template syl notext noblank fxgroup droplet,!maxloop(math.random(4,5))!!retime("presyl",-150+150*j,800+150*j)!{\an5\pos(320,300)\fs20\fscy15\t(\fscx1700\fscy280\fs200)\bord2\be3\1a&HFF&\3c!_G.ass_color(_G.HSV_to_RGB((180+$si*5)%360,1,1))!\fnMS Mincho\fad(0,700)!quiver_ripple(800)!}・
+Comment: 4,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup splash,{!spiral_splash(math.random(30,35),50,240,200,15)!\1c&HFFFFFF&\3c!line.text!\bord2\3a&H4A&\blur4\t(\bord1\fscx50\fscy50)\fnMS Mincho\fad(0,300)\fs15\p!math.random(2,3)!}!sparkle!
+Comment: 4,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup splash,{!spiral_splash(math.random(30,35),590,240,200,15)!\1c&HFFFFFF&\3c!line.text!\bord2\3a&H4A&\blur4\t(\bord1\fscx50\fscy50)\fnMS Mincho\fad(0,300)\fs15\p!math.random(2,3)!}!sparkle!
+Comment: 4,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup splash2,{!spiral_splash(math.random(30,35),320,240,360,30)!\1c&HFFFFFF&\3c!line.text!\bord2\3a&H4A&\blur4\t(\bord1\fscx50\fscy50)\fnMS Mincho\fad(0,300)\fs20\p!math.random(2,3)!}!sparkle!
+Comment: 4,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup splash3,{!spiral_splash(math.random(20,25),30,20,200,20)!\1c&HFFFFFF&\3c!line.text!\bord2\3a&H4A&\blur4\t(\bord1\fscx50\fscy50)\fnMS Mincho\fad(0,300)\fs15\p!math.random(2,3)!}!sparkle!
+Comment: 4,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup splash3,{!spiral_splash(math.random(20,25),30,460,200,20)!\1c&HFFFFFF&\3c!line.text!\bord2\3a&H4A&\blur4\t(\bord1\fscx50\fscy50)\fnMS Mincho\fad(0,300)\fs15\p!math.random(2,3)!}!sparkle!
+Comment: 4,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup splash3,{!spiral_splash(math.random(20,25),610,460,200,20)!\1c&HFFFFFF&\3c!line.text!\bord2\3a&H4A&\blur4\t(\bord1\fscx50\fscy50)\fnMS Mincho\fad(0,300)\fs15\p!math.random(2,3)!}!sparkle!
+Comment: 4,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup splash3,{!spiral_splash(math.random(20,25),610,20,360,20)!\1c&HFFFFFF&\3c!line.text!\bord2\3a&H4A&\blur4\t(\bord1\fscx50\fscy50)\fnMS Mincho\fad(0,300)\fs15\p!math.random(2,3)!}!sparkle!
+Comment: 4,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup wind,!maxloop(math.random(20,30))!!retime("line",0,0)!{!randsize(80,120)!\move(!640+math.random(-200,200)!,!math.random(20,460)!,!math.random(-200,200)!,!math.random(20,460)!)!randangle(-180,180)!\t(!randangle(-1080,1080)!)\org(!420+math.random(-100,100)!,!math.random(20,460)!)\p2\fad(100,!math.random(100,500)!)\1c!(string.len(line.text)<1) and "&HFFFFFF&" or "&H1617E7&"!\blur2}!feather!
+Comment: 3,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup sky,!inc_sky()!{\pos(0,0)\an7\1vc(!_G.ass_color(_G.HSV_to_RGB(170+40*sky_index,0.35,0.95))!,!_G.ass_color(_G.HSV_to_RGB(140+40*sky_index,0.3,0.95))!,!_G.ass_color(_G.HSV_to_RGB(210+40*sky_index,0.3,0.95))!,!_G.ass_color(_G.HSV_to_RGB(180+40*sky_index,0.4,0.95))!)\1va(&HFF&,&H33&,&H33&,&H00&)\t(\1va(&H00&,&H00&,&H00&,&HFF&)\fad(1000,1000)\p1}m -1 -1 l 641 -1 641 481 -1 481
+Comment: 3,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup bubble,{\pos(0,0)\an7\1vc(&HEFCC84&,&HEFCC84&,&H98693D&,&H98693D&)\1va(&HFF&,&HFF&,&H00&,&H00&)\t(\1va(&H00&,&H00&,&HFF&,&HFF&)\fad(500,500)\p1}m -1 -1 l 641 -1 641 481 -1 481
+Comment: 4,0:00:00.00,0:00:00.00,Effect,,0000,0000,0000,template notext fxgroup bubble,!maxloop(math.random(30,40))!!retime("line",math.random(-500,500),math.random(-500,500))!{!move_bubble(math.random(640))!!randsize(50,150)!\1c!_G.ass_color(_G.HSV_to_RGB(200+math.random(-20,20),0.1,1))!\be1\p3\fad(100,300)\alpha!_G.ass_alpha(math.random(0,50))!}!bubble_shape!
+Comment: 5,0:00:00.00,0:00:00.00,TRUSt,,0000,0000,0000,code line,if (romaji_start==-1) then romaji_start=line.i end
+Comment: 5,0:00:00.00,0:00:00.00,TRUSt,,0000,0000,0000,template syl noblank,!retime("presyl",-2000,0)!{\an5\move(!$center+math.random(-20,20)!,!$middle-40!,$center,$middle)\blur5\frz!math.random(-100,100)!\rnd5\t(\blur0\frz0\rnd0)\fad(1000,0)\alpha&H22&}
+Comment: 5,0:00:00.00,0:00:00.00,TRUSt,,0000,0000,0000,template syl noblank,!retime("syl",0,($si==$syln) and 300 or 0)!{\an5\pos($center,$middle)\fscx130\fscy130\t(0,$sdur,\fscx100\fscy100\bord1)\3c!_G.ass_color(_G.HSV_to_RGB((($li-romaji_start)*25+$si*5)%360,1,1))!\bord3\be3\3a&H33&!($si==$syln) and string.format("\\t(%d,%d,\\bord0)\\t(%d,%d,\\blur5\\alpha&HFF&)",$sdur,$sdur+10,$sdur,$sdur+300) or ""!}
+Comment: 5,0:00:00.00,0:00:00.00,TRUSt,,0000,0000,0000,template syl noblank,!retime("postsyl",0,400)!{\an5\pos($center,$middle)\3c!_G.ass_color(_G.HSV_to_RGB((($li-romaji_start)*25+$si*5)%360,1,1))!\bord2\be1\3a&H11&\1a&HFF&\t(\fscx160\fscy160\3a&HFF&)}
+Comment: 5,0:00:00.00,0:00:00.00,TRUSt,,0000,0000,0000,template syl noblank,!retime("syl2end",0,0)!{\an5\pos($center,$middle)\t(\alpha&HFF&\blur4)}
+Comment: 0,0:00:00.00,0:00:00.00,Esub,,0000,0000,0000,code line,if(trans_start==-1) then trans_start=line.i end
+Comment: 5,0:00:00.00,0:00:00.00,Esub,,0000,0000,0000,template,{\fad(100,200)\t(0,150,\bord3\be3)\3c!_G.ass_color(_G.HSV_to_RGB((($li-trans_start)*25+$si*5)%360,1,1))!\3a&H11&\t(150,600,\bord1\be1)}
+Dialogue: 0,0:00:14.96,0:00:18.05,TRUSt,,0000,0000,0000,,{\k20}I {\k60}dream {\k19}of {\k63}all {\k35}our {\k50}days {\k11}to {\k51}come
+Dialogue: 0,0:00:18.20,0:00:21.29,TRUSt,,0000,0000,0000,,{\k23}I {\k39}drag {\k32}in {\k45}shapes {\k33}in {\k72}lines {\k12}to {\k53}burn
+Dialogue: 0,0:00:21.29,0:00:25.30,TRUSt,,0000,0000,0000,,{\k30}And {\k73}wonder {\k47}how {\k41}we {\k78}end {\k39}this {\k93}game
+Dialogue: 0,0:00:27.88,0:00:31.00,TRUSt,,0000,0000,0000,,{\k29}As {\k21}on {\k39}and {\k60}on {\k26}from {\k49}stone {\k24}to {\k64}stone
+Dialogue: 0,0:00:31.00,0:00:33.28,TRUSt,,0000,0000,0000,,{\k38}The {\k73}monsters {\k31}come {\k33}and {\k53}go

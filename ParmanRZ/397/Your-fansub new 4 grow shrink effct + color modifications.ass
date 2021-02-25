@@ -1,0 +1,48 @@
+[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 640
+PlayResY: 480
+ScaledBorderAndShadow: yes
+Last Style Storage: Default
+Video File: ..\..\..\PROJECT\Bleach opening 03 (Ichirin no hana).avi
+Video Aspect Ratio: 0
+Video Zoom: 6
+Video Position: 567
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 0010-furigana,Odessa LET,10,&H00D9E0D8,&H00D9E0D8,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0.5,0,2,10,10,65,1
+Style: effet 4-furigana,SunnySide,12.5,&H00000000,&H00FFFFFF,&H64945220,&H00000000,-1,0,0,0,100,100,0,0,1,1,0,8,10,10,10,1
+Style: effet 3-furigana,SunnySide,12.5,&H00000000,&H00FFFFFF,&H64945220,&H00000000,-1,0,0,0,100,100,0,0,1,1,0,8,10,10,10,1
+Style: effet 2-furigana,SunnySide,12.5,&H00000000,&H00FFFFFF,&H64945220,&H00000000,-1,0,0,0,100,100,0,0,1,1,0,8,10,10,10,1
+Style: effet 1-furigana,SunnySide,12.5,&H00000000,&H00FFFFFF,&H64945220,&H00000000,-1,0,0,0,100,100,0,0,1,1,0,8,10,10,10,1
+Style: effet 1,SunnySide,25,&H00000000,&H00FFFFFF,&H64945220,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,8,10,10,10,1
+Style: effet 2,SunnySide,25,&H00000000,&H00FFFFFF,&H64945220,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,8,10,10,10,1
+Style: effet 3,SunnySide,25,&H00000000,&H00FFFFFF,&H64945220,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,8,10,10,10,1
+Style: effet 4,SunnySide,25,&H00000000,&H00FFFFFF,&H64945220,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,8,10,10,10,1
+Style: 0010,Odessa LET,20,&H00D9E0D8,&H00D9E0D8,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,0,2,10,10,65,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:05.00,0:00:10.00,Default,Effet 1,0000,0000,0000,template line,Note1:\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF& c&h Color 01 --- 2C&h color 2  --- 3C&h Bordure (border) (fscx Longueur ) (fscy largeur)
+Comment: 0,0:00:10.00,0:00:15.00,Default,Effet 1,0000,0000,0000,template line,Note 02 : Effet 01 shrink grow (petit puis grand)  \N Effet 02 1/2 Grow (1/2 gros) \NEffet 03 - largeur (not large) \N Effet 04 Ichirin no hana
+Comment: 0,0:00:15.00,0:00:20.00,Default,Effet 1,0000,0000,0000,template line,Note 03 : To change color just change the [\c&H000000& ( color 1 "Black")\2c&HFFFFFF& (color 2 " white ")\3c&HFFFFFF& (color 3 border "blue")]\N                                                                                        Note 03 : Pour changer les couleurs changer les codes hexadicimeaux [\c&H000000& ( color 1 "Noire")\2c&HFFFFFF& (color 2 " Blanc")\3c&HFFFFFF& (color 3 bordure "Bleu")]
+Comment: 0,0:00:00.00,0:00:00.00,effet 1,Effet 1,0000,0000,0000,template line,{\r\k$kdur\t($start,$end,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t($start,$mid,\fscy50\fscx50\t($mid,$end,\fscy100\fscx100))}
+Comment: 0,0:00:00.00,0:00:00.00,0010,,0000,0000,0000,,---------------------------------------------------------------------------
+Comment: 0,0:00:00.00,0:00:00.00,effet 2,Effet 2,0000,0000,0000,template line,{\r\k$kdur\t($start,$end,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t($start,$mid,\fscy120\fscx120\t($mid,$end,\fscy100\fscx100))}
+Comment: 0,0:00:00.00,0:00:00.00,0010,,0000,0000,0000,,---------------------------------------------------------------------------
+Comment: 0,0:00:00.00,0:00:00.00,effet 3,Effet 3,0000,0000,0000,template line,{\r\k$kdur\t($start,$end,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t($start,$mid,\fscy100\fscx50\t($mid,$end,\fscy100\fscx100))}
+Comment: 0,0:00:00.00,0:00:00.00,0010,,0000,0000,0000,,---------------------------------------------------------------------------
+Comment: 0,0:00:00.00,0:00:00.00,effet 4,Effet 4,0000,0000,0000,template line,{\r\k$kdur\t($start,$end,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t($start,$mid,\fscy120\t($mid,$end,\fscy100\))}
+Comment: 0,0:00:05.44,0:00:10.41,effet 1,,0000,0000,0000,karaoke,{\k42}Ki{\k29}mi {\k14}wa {\k35}ki{\k38}mi {\k33}na{\k10}ku{\k36}shi{\k47}ka{\k62} {\k30}mi{\k50}ra {\k19}i{\k28}i {\k24}yo
+Comment: 0,0:00:10.48,0:00:13.49,effet 2,,0000,0000,0000,karaoke,{\k31}Ka{\k30}wa{\k16}re {\k28}na{\k47}n{\k26}te {\k20}ho{\k32}ka {\k71}ni
+Comment: 0,0:00:14.16,0:00:18.54,effet 3,,0000,0000,0000,karaoke,{\k11}Mi{\k31}ra{\k32}i {\k31}n{\k68}da{\k33} {\k37}ka{\k48}ne{\k46}na{\k33}i{\k68}de
+Comment: 0,0:00:18.73,0:00:21.12,effet 4,,0000,0000,0000,karaoke,{\k14}I{\k21}chi{\k36}rin {\k38}no {\k36}ha{\k94}na
+Comment: 0,0:00:21.12,0:00:23.12,effet 4,,0000,0000,0000,karaoke,
+Dialogue: 0,0:00:05.44,0:00:10.41,effet 1,,0000,0000,0000,fx,{\r\k42\t(0,420,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(0,210,\fscy50\fscx50\t(210,420,\fscy100\fscx100))}Ki{\r\k29\t(420,710,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(420,565,\fscy50\fscx50\t(565,710,\fscy100\fscx100))}mi {\r\k14\t(710,850,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(710,780,\fscy50\fscx50\t(780,850,\fscy100\fscx100))}wa {\r\k35\t(850,1200,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(850,1025,\fscy50\fscx50\t(1025,1200,\fscy100\fscx100))}ki{\r\k38\t(1200,1580,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(1200,1390,\fscy50\fscx50\t(1390,1580,\fscy100\fscx100))}mi {\r\k33\t(1580,1910,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(1580,1745,\fscy50\fscx50\t(1745,1910,\fscy100\fscx100))}na{\r\k10\t(1910,2010,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(1910,1960,\fscy50\fscx50\t(1960,2010,\fscy100\fscx100))}ku{\r\k36\t(2010,2370,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(2010,2190,\fscy50\fscx50\t(2190,2370,\fscy100\fscx100))}shi{\r\k47\t(2370,2840,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(2370,2605,\fscy50\fscx50\t(2605,2840,\fscy100\fscx100))}ka{\r\k62\t(2840,3460,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(2840,3150,\fscy50\fscx50\t(3150,3460,\fscy100\fscx100))} {\r\k30\t(3460,3760,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(3460,3610,\fscy50\fscx50\t(3610,3760,\fscy100\fscx100))}mi{\r\k50\t(3760,4260,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(3760,4010,\fscy50\fscx50\t(4010,4260,\fscy100\fscx100))}ra {\r\k19\t(4260,4450,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(4260,4355,\fscy50\fscx50\t(4355,4450,\fscy100\fscx100))}i{\r\k28\t(4450,4730,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(4450,4590,\fscy50\fscx50\t(4590,4730,\fscy100\fscx100))}i {\r\k24\t(4730,4970,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(4730,4850,\fscy50\fscx50\t(4850,4970,\fscy100\fscx100))}yo
+Dialogue: 0,0:00:10.48,0:00:13.49,effet 2,,0000,0000,0000,fx,{\r\k31\t(0,310,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(0,155,\fscy120\fscx120\t(155,310,\fscy100\fscx100))}Ka{\r\k30\t(310,610,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(310,460,\fscy120\fscx120\t(460,610,\fscy100\fscx100))}wa{\r\k16\t(610,770,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(610,690,\fscy120\fscx120\t(690,770,\fscy100\fscx100))}re {\r\k28\t(770,1050,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(770,910,\fscy120\fscx120\t(910,1050,\fscy100\fscx100))}na{\r\k47\t(1050,1520,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(1050,1285,\fscy120\fscx120\t(1285,1520,\fscy100\fscx100))}n{\r\k26\t(1520,1780,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(1520,1650,\fscy120\fscx120\t(1650,1780,\fscy100\fscx100))}te {\r\k20\t(1780,1980,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(1780,1880,\fscy120\fscx120\t(1880,1980,\fscy100\fscx100))}ho{\r\k32\t(1980,2300,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(1980,2140,\fscy120\fscx120\t(2140,2300,\fscy100\fscx100))}ka {\r\k71\t(2300,3010,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(2300,2655,\fscy120\fscx120\t(2655,3010,\fscy100\fscx100))}ni
+Dialogue: 0,0:00:14.16,0:00:18.54,effet 3,,0000,0000,0000,fx,{\r\k11\t(0,110,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(0,55,\fscy100\fscx50\t(55,110,\fscy100\fscx100))}Mi{\r\k31\t(110,420,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(110,265,\fscy100\fscx50\t(265,420,\fscy100\fscx100))}ra{\r\k32\t(420,740,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(420,580,\fscy100\fscx50\t(580,740,\fscy100\fscx100))}i {\r\k31\t(740,1050,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(740,895,\fscy100\fscx50\t(895,1050,\fscy100\fscx100))}n{\r\k68\t(1050,1730,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(1050,1390,\fscy100\fscx50\t(1390,1730,\fscy100\fscx100))}da{\r\k33\t(1730,2060,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(1730,1895,\fscy100\fscx50\t(1895,2060,\fscy100\fscx100))} {\r\k37\t(2060,2430,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(2060,2245,\fscy100\fscx50\t(2245,2430,\fscy100\fscx100))}ka{\r\k48\t(2430,2910,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(2430,2670,\fscy100\fscx50\t(2670,2910,\fscy100\fscx100))}ne{\r\k46\t(2910,3370,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(2910,3140,\fscy100\fscx50\t(3140,3370,\fscy100\fscx100))}na{\r\k33\t(3370,3700,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(3370,3535,\fscy100\fscx50\t(3535,3700,\fscy100\fscx100))}i{\r\k68\t(3700,4380,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(3700,4040,\fscy100\fscx50\t(4040,4380,\fscy100\fscx100))}de
+Dialogue: 0,0:00:18.73,0:00:21.12,effet 4,,0000,0000,0000,fx,{\r\k14\t(0,140,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(0,70,\fscy120\t(70,140,\fscy100\))}I{\r\k21\t(140,350,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(140,245,\fscy120\t(245,350,\fscy100\))}chi{\r\k36\t(350,710,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(350,530,\fscy120\t(530,710,\fscy100\))}rin {\r\k38\t(710,1090,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(710,900,\fscy120\t(900,1090,\fscy100\))}no {\r\k36\t(1090,1450,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(1090,1270,\fscy120\t(1270,1450,\fscy100\))}ha{\r\k94\t(1450,2390,\c&H000000&\2c&HFFFFFF&\3c&HFFFFFF&)\t(1450,1920,\fscy120\t(1920,2390,\fscy100\))}na
+Dialogue: 0,0:00:21.12,0:00:23.12,effet 4,,0000,0000,0000,fx,

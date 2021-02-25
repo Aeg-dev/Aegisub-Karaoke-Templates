@@ -1,0 +1,39 @@
+[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 640
+PlayResY: 480
+ScaledBorderAndShadow: yes
+Video File: D:\yacine\PROJECT\Bleach ending 26 (Song for...).mp4
+Video Aspect Ratio: 0
+Video Zoom: 4
+Video Position: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default-furigana,Arista 2.0,20,&H00FFB700,&H00000000,&H00FFFFFF,&H00000000,0,0,0,0,100,100,0,0,1,1,0,2,10,10,10,1
+Style: Default,Arista 2.0,40,&H00FFB700,&H00000000,&H00FFFFFF,&H00000000,0,0,0,0,100,100,0,0,1,2,0,5,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:04.81,Default,Effet 1,0000,0000,0000,Template line,{\r\k$kdur\fs40\t($start,$mid,\fs35\c&HFF0000)\t($mid,$end,\fs55)\t($end,!$end+100!,\alpha&HEF&)}
+Dialogue: 0,0:00:00.00,0:00:04.81,Default,Flash,0000,0000,0000,Template line,{\r\k$kdur\t($start,$end,\1c&H00FF00&)\t($start,!$start+$dur*0.3!,\fscy}
+Dialogue: 0,0:00:00.00,0:00:04.81,Default,Pivot horizontal ,0000,0000,0000,Template line,{\r\t($start,!$start+1!,\frx100)\t(!$start+1!,$end,\frx0)}
+Dialogue: 0,0:00:00.00,0:00:04.81,Default,grosissement du bord et disparition du txt,0000,0000,0000,Template line,{\a7\r\k$kdur\t($start,$end,\1c&alpha&\t($start,$mid,\1c&HD86C43&\t($mid,$end,\bord4\1c&alpha&}
+Dialogue: 0,0:00:00.00,0:00:04.81,Default,Guro shorinko 3D,0000,0000,0000,Template line,{\r\k$kdur\t($start,$end,\1c&HFEF9FC&)\t($start,$mid,\fscy120)\t($mid,$end,\\fry10\fscx120\3a&H55\1a&H00\4a&H88)}
+Dialogue: 0,0:00:00.00,0:00:04.81,Default,Guro shorinko 3D -2-,0000,0000,0000,Template line,{\r\k$kdur\t($start,$end,\1c&HFEF9FC&)\t($start,$mid,\fscy120)\t($mid,$end,\\fry10\fscx120\3a&H55\1a&H00\4a&H88)}
+Dialogue: 0,0:00:00.00,0:00:04.81,Default,Guro shorinko,0000,0000,0000,Template line,{\r\k$kdur\t($start,$end,\1c&HFEF9FC&)\t($start,$mid,\fscy150)\t($mid,$end,\fscy80\fscx120\3a&H55\1a&H00\4a&H88)}
+Dialogue: 0,0:00:00.00,0:00:04.81,Default,Guro + hollow bord,0000,0000,0000,Template line,{\r\k$kdur\t($start,$end,\1c&HFEF9FC&)\t($start,$mid,\fscy150)\t($mid,$end,\\frz0.008\1a&HFF&)}
+Dialogue: 0,0:00:00.00,0:00:04.81,Default,Faling txt,0000,0000,0000,Template line,{\r\k$kdur\t($start,$end,\1c&HFBFBFC&)\t($start,$mid,\\frx10)\t($mid,$end,\\q2\org(512,150))}
+Dialogue: 0,0:00:00.00,0:00:04.81,Default,Grow + opacity txt+bord 100,0000,0000,0000,Template line,{\r\k$kdur\fs40\t($start,$mid,\fs35\c&HFF0000)\t($mid,$end,\fs55)\t($end,!$end+100!,\alpha&HEF&)}
+Dialogue: 0,0:00:00.00,0:00:04.81,Default,Grow,0000,0000,0000,Template line,{\r\k$kdur\t($start,$end,\&HCD88EB&)\t($start,$mid,\fscy180)\t($mid,$end,\fscy180)}
+Dialogue: 0,0:00:00.00,0:00:04.81,Default,Grow frz kf,0000,0000,0000,Template line,{\r\kf$kdur\t($start,$end,\1c&H!colores[math.random(5)]!)\t($start,$mid,\fscy130\frx20)\t($mid,$end,\fscy100\frx20\frx1)\t($end,!$end+500!,\alpha&HFF&)}
+Dialogue: 0,0:00:00.00,0:00:04.81,Default,Growshrink + disparition bord,0000,0000,0000,Template line,{\r\k$kdur\t($start,$end,\1c&HDAADF4&)\t($START,$MID,\bord0)\t($START,$MID,\frz-0.05\fscx130\fscy130)\t($MID,$END,\frz0\fscx100\fscy100)}
+Comment: 0,0:00:00.00,0:00:04.81,Default,Grow disparition syl,0000,0000,0000,Template line,{\r\k$kdur\t($start,$end,\1c&HFEF9FC&)\t($start,$mid,\fscy180)\t($mid,$end,\\frx-0.0001\alpha&HFFFFFF&)}
+Dialogue: 0,0:00:04.81,0:00:14.57,Default,,0000,0000,0000,karaoke,{\k33}Ku{\k42}ra{\k14}ya{\k53}mi {\k34}no {\k59}Blind {\k55}Day {\k50}and {\k201}Day{\k72} {\k8}a{\k14}shi{\k24}mo{\k23}to {\k43}su{\k30}ra {\k36}mi{\k33}e{\k36}na{\k19}ku{\k97}te
+Dialogue: 0,0:00:14.88,0:00:21.15,Default,,0000,0000,0000,karaoke,{\k22}Ka{\k31}na{\k48}shi{\k33}mi {\k18}to {\k50}kou{\k37}ka{\k28}i {\k13}no {\k37}ku{\k48}sa{\k48}ri {\k214}wa
+Dialogue: 0,0:00:21.49,0:00:24.62,Default,,0000,0000,0000,karaoke,{\k26}Mo{\k15}ga{\k23}ku {\k26}ho{\k34}do {\k27}ka{\k43}ra{\k25}ma{\k37}ru {\k18}da{\k39}ke
+Dialogue: 0,0:00:25.52,0:00:30.50,Default,,0000,0000,0000,karaoke,{\k19}Ku{\k35}mo{\k31}ma {\k51}ka{\k34}ra{\k94} {\k76}ko{\k30}bo{\k50}re{\k78}ta
+Dialogue: 0,0:00:30.50,0:00:36.50,Default,,0000,0000,0000,karaoke,{\k36}Hi{\k13}to{\k51}su{\k26}ji {\k43}no {\k31}hi{\k38}ka{\k31}ri {\k33}wo {\k25}ta{\k52}gu{\k24}ri{\k30}yo{\k26}se{\k141}te
+Dialogue: 0,0:00:37.44,0:00:39.97,Default,,0000,0000,0000,karaoke,{\k11}{\k15}E{\k10}ra{\k21}su {\k30}wo {\k46}tsu{\k16}mu{\k104}gu

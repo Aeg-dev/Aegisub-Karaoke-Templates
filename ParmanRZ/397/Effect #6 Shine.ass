@@ -1,0 +1,24 @@
+[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 1280
+PlayResY: 720
+ScaledBorderAndShadow: yes
+Last Style Storage: Default
+Video Aspect Ratio: 0
+Video Zoom: 6
+Video Position: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,30,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,3,3,2,20,20,15,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:02.00,Default,,0000,0000,0000,,Efecto creado por AEG si lo vas a usar por favor dame crédito por el efecto \ Effect created by AEG if you going to use please give me credit for the effect
+Comment: 2,0:00:00.00,0:00:00.15,Default,,0000,0000,0000,template syl,!retime("syl",0,150)!{\an5\move($center,$middle,$center,$middle)\t(0,150,\fscx100\fscy100\blur0)\t(150,450,\fscx130\fscy130\blur5\3c&HFFFFFF&)\t(450,500,\fscx80\fscy80\blur5\fad(0,100)\3c&HFFFFFF&)}
+Comment: 1,0:00:00.00,0:00:00.15,Default,,0000,0000,0000,template syl,!retime("start2syl",-300,0)!{\an5\move($center,$middle,$center,$middle)\t(-200,-150,\frz180\blur5\3c&HFFFFFF&)\t(0,450,\frz0\fscx100\fscy100\blur0\3c&H000000&)}
+Comment: 0,0:00:36.62,0:00:40.33,Default,,0000,0000,0000,karaoke,{\k38\pos(558,384)}Ji{\k35}geum{\k24}bu{\k16}teo {\k14}all {\k67}stop {\k15}eo{\k28}neu {\k29}nu{\k29}gu{\k18}ra {\k23}hae{\k35}do
+Comment: 0,0:00:41.11,0:00:44.33,Default,,0000,0000,0000,karaoke,{\k13}I {\k27}hyeon{\k32}jan{\k26}geul {\k9}beo{\k25}seo{\k21}na{\k30}seon {\k23}an {\k23}dwae {\k37}myeong{\k24}bae{\k33}khan
+Comment: 0,0:00:44.35,0:00:49.62,Default,,0000,0000,0000,karaoke,{\k6}I {\k48}sa{\k22}geon {\k34}so{\k30}ge {\k56}gin{\k52}jang{\k55}ha{\k59}ji {\k165}ma

@@ -1,0 +1,41 @@
+[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 640
+PlayResY: 480
+ScaledBorderAndShadow: yes
+Last Style Storage: Default
+Video File: ?dummy:30.000000:9000:1280:720:0:0:0:c
+Video Aspect Ratio: 0
+Video Zoom: 4
+Video Position: 210
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: Copie de Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: Copie de Copie de Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: Copie de Copie de Copie de Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: Copie de Copie de Copie de Copie de Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:05.00,Default,,0000,0000,0000,,This is a compillation of the best effects of Sweet-Karaoke.com
+Comment: 0,0:00:05.00,0:00:07.00,Default,Wave (Vague),0000,0000,0000,template line,{\fscx100\fscy100\c&Hffffff&\1a&H10&\bord0\b1\t($start,[$start+300],\fscx150\fscy150\c&H8080ff&\1a&H00&\bord3\b1)\t([$start+440],[$start+1240],\fscx100\fscy100\c&Hffffff&\1a&H50&\bord0\b0)}
+Comment: 0,0:00:05.00,0:00:07.00,Copie de Default,Orenji,0000,0000,0000,template line,{\shad3\bord0\4c&HFF8080&\4a&H33&}{\t($start,[$start+1],\shad10\bord3\4c&HD88D26&\4a&H33&)\t([$start+2],$end,\shad3\bord0\4c&Hffff00&\4a&H33&)}
+Comment: 0,0:00:05.00,0:00:07.00,Copie de Copie de Default,bas+colorize,0000,0000,0000,template line,{\frz0\bord2\1c&HFFFFFF&\t($start,[$start+1],\bord4\frz-0.08)\t([$start+1],$end,\bord2\1c&H3C68F5&\frz0)}
+Comment: 0,0:00:05.00,0:00:07.00,Default,,0000,0000,0000,template line,
+Comment: 0,0:00:05.00,0:00:07.00,Default,,0000,0000,0000,template line,
+Comment: 0,0:00:05.00,0:00:07.00,Default,,0000,0000,0000,template line,
+Comment: 0,0:00:05.00,0:00:07.00,Copie de Copie de Copie de Default,Wave (Vague) 2,0000,0000,0000,template line,{\fscx100\fscy100\bord0\1c&HFFFFFF&\3c&H444440&\4c&H050505&}{\t($start,$end,\fscx140\fscy140\1c&HCA0115&\bord3)\t($end,[$end+700],\3aH&FF&\fscx100\fscy100\1c&HFFFFFF&\bord0)}
+Comment: 0,0:00:07.00,0:00:09.00,Default,,0000,0000,0000,,---------------------------------------------------------------
+Comment: 0,0:00:05.00,0:00:07.00,Copie de Copie de Copie de Copie de Default,Furishiboru1,0000,0000,0000,template line,{\frx[Math.round($random*50)]\fry[Math.round($random*50)]\frz[Math.round($random*100)/10000]}{\alpha&HFF&\t(0,[($shift_start*10)-2],\1a&H00&\3a&H00&)\t([($shift_start*10)-1],[$shift_start*10],\alpha&HFF&)}{\t(0,[$shift_start*10],\frx0\fry0\frz0}
+Comment: 0,0:00:05.00,0:00:07.00,Copie de Copie de Copie de Copie de Default,Furishiboru2,0000,0000,0000,template line,{\1a&H00&\3a&H00&\t($start,[$start+1],\1a&HFF&\3a&HFF&)}
+Comment: 0,0:00:05.00,0:00:07.00,Copie de Copie de Copie de Copie de Default,Furishiboru3,0000,0000,0000,template line,{\1a&HFF&\3a&HFF&\t([$start+1],[$start+2],\1a&H00&\3a&H00&)\t([$end-1],$end,\1a&HFF&\3a&HFF&)}{\bord1\fscy100\t($start,[$start+($k_duration*10/2)],\bord3\fscy150)\t([$start+($k_duration*10/2)],$end,\bord1\fscy100)}{\frz0\t($start,$end,\frz0.08)}
+Comment: 0,0:00:05.00,0:00:07.00,Copie de Copie de Copie de Copie de Default,Furishiboru4,0000,0000,0000,template line,{\frx0\fry0\frz0.08\t([$end+1],[$end+1+($shift_end*10)],\fry0\frx[Math.round($random*100/10)]\frz[Math.round($rando_neg*100/20)]\1a&HFF&\3a&HFF&}
+Dialogue: 0,0:00:05.44,0:00:10.41,Copie de Copie de Default,,0000,0000,0000,,{\k75}Kimi {\k45}wa {\k75}kimi {\k151}nakushika {\k75}mira {\k45}ii {\k31}yo
+Dialogue: 0,0:00:10.48,0:00:13.49,Copie de Copie de Default,,0000,0000,0000,,{\k63}Kaware {\k126}nante {\k81}hoka {\k31}ni
+Dialogue: 0,0:00:14.16,0:00:18.54,Copie de Copie de Default,,0000,0000,0000,,{\k46}Mira {\k28}i {\k122}nda {\k242}kanenaide
+Dialogue: 0,0:00:18.73,0:00:21.12,Copie de Copie de Default,,0000,0000,0000,,{\k73}Ichirin {\k30}no {\k136}hana
+Dialogue: 0,0:00:09.00,0:00:11.00,Default,,0000,0000,0000,,

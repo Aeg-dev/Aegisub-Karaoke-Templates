@@ -1,0 +1,43 @@
+[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 640
+PlayResY: 480
+ScaledBorderAndShadow: yes
+Last Style Storage: Default
+Audio File: ?video
+Video File: ..\..\..\PROJECT\Bleach opening 11 (Zanpakuto).mp4
+Video Aspect Ratio: 0
+Video Zoom: 4
+Video Position: 299
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Esub-furigana,mikachan-PB,12.5,&H00FFFFFF,&H000000FF,&H32DD9E3F,&H007E4B00,-1,0,0,0,100,100,0,0,1,1,0.5,2,8,40,12,1
+Style: Jsub-furigana,@HG正楷書体-PRO,11,&H00FFFFFF,&H000000FF,&H320BA1F7,&H96076DA8,-1,-1,0,0,100,100,-1,-90,1,0.8,0.4,6,10,10,10,1
+Style: Kar-furigana,Tussle,16,&H32FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0,8,10,10,15,1
+Style: Kar,Tussle,32,&H32FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,0,8,10,10,15,1
+Style: Jsub,@HG正楷書体-PRO,22,&H00FFFFFF,&H000000FF,&H320BA1F7,&H96076DA8,-1,-1,0,0,100,100,-1,-90,1,1.6,0.8,6,10,10,10,1
+Style: Esub,mikachan-PB,25,&H00FFFFFF,&H000000FF,&H32DD9E3F,&H007E4B00,-1,0,0,0,100,100,0,0,1,2,1,2,8,40,12,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:00.00,Kar,Credit,0000,0000,0000,,Written by YAD
+Comment: 0,0:00:00.00,0:00:00.00,Kar,,0000,0000,0000,code once,star ={"m 5 0 b 5 0 0 0 0 5 b 0 5 0 8 5 8 b 9 8 9 5 9 5 b 9 5 9 0 5 0   "}
+Comment: 0,0:00:15.27,0:00:15.27,Kar,Get Frame Dur,0000,0000,0000,code once,msa = _G.aegisub.ms_from_frame(1) msb = _G.aegisub.ms_from_frame(100) if msa == nil and msb == nil then frame_dur = 33 else frame_dur = (msb-msa)/100 end
+Comment: 0,0:00:15.27,0:00:15.27,Kar,,0000,0000,0000,code once,function set_temp(ref,val) temp[ref] = val; return val; end
+Comment: 0,0:00:00.00,0:00:00.00,Kar,,0000,0000,0000,code syl all,function char_counter2(ref) ci2[ref] = ci2[ref] + 1; return "" end
+Comment: 0,0:00:00.00,0:00:00.00,Kar,,0000,0000,0000,code line all,ci2 = { 0 }; cn = _G.unicode.len(orgline.text_stripped:gsub(" ",""))
+Comment: 1,0:00:00.00,0:00:00.00,Kar,,0000,0000,0000,template noblank,!retime("syl",0,200)!{\an5\blur6\bord6\pos($scenter,$smiddle)\fad(0,100)\t(0,100,\3c&HFFFFFF&\fscx130\fscy130)\t(100,$dur,\3c!line.styleref.color3!\fscx100\fscy100\bord2.5\blur2)}
+Comment: 0,0:00:15.27,0:00:15.27,Kar,Beizer Curve Move,0000,0000,0000,code once,function bezier_move(x1,y1,x2,y2,x3,y3,x4,y4,t1,t2,accel,afterimage_blur,afterimage_dur,density) if density == 0 or density == nil then density = 1 end if afterimage_blur == 0 or afterimage_blur == nil then x_blur = 0 y_blur = 0 else x_blur = math.random(-afterimage_blur,afterimage_blur)/3 y_blur = math.random(afterimage_blur) end if afterimage_dur == nil or afterimage_dur < frame_dur then afterimage_dur = frame_dur end  if accel == nil then accel = 1 end x_pos = {} y_pos = {} dur = t2 - t1 frames = math.floor(dur/(frame_dur/density)) x_pos[j] =  (1-(j/frames)^accel)^3 * x1 + 3*(1-(j/frames)^accel)^2 * ((j/frames)^accel) * x2 + 3*(1-(j/frames)^accel) * ((j/frames)^accel)^2 * x3 + ((j/frames)^accel)^3 * x4  y_pos[j] = (1-(j/frames)^accel)^3 * y1 + 3*(1-(j/frames)^accel)^2 * ((j/frames)^accel) * y2 + 3*(1-(j/frames)^accel) * ((j/frames)^accel)^2 * y3 + ((j/frames)^accel)^3 * y4  if j == 1 then maxloop(frames) end retime("presyl",t1+(j-1)*(frame_dur/density),t1+j*(frame_dur/density)+afterimage_dur) return string.format("\\move(%d,%d,%d,%d)",x_pos[j],y_pos[j],x_pos[j] + x_blur ,y_pos[j] + y_blur) end
+Comment: 0,0:00:15.27,0:00:15.27,Kar,effect,0000,0000,0000,template notext noblank,!retime("start2syl",0,1500)!{\an5\fscx08\fscy08\bord0\shad0\c&H000000&\bord3\be50\frz!math.random(-100,100)!\3c&H0000FF&\!bezier_move($center-$width*1.3/2,$middle,$center-$width*1.3/2,$middle-$width*1.3/2*1.4,$center+$width*1.3/2,$middle-$width*1.3/2*1.4,$center+$width*1.3/2,$middle,-500,0,1,50,2000,5)!\!AutoTags(logic[math.random(4)],'1a&HFF&','alpha0')!\p1}!star[math.random(3)]!
+Comment: 0,0:00:00.00,0:00:00.00,Kar,Get Scr Resolution,0000,0000,0000,code once,xres, yres = _G.aegisub.video_size() if xres == nil  then x_ratio = 1 y_ratio = 1 else x_ratio = xres/1024 y_ratio = x_ratio end
+Comment: 0,0:00:00.00,0:00:00.00,Kar,Get Scr Resolution,0000,0000,0000,code once,xres, yres = _G.aegisub.video_size() if xres == nil  then x_ratio = 1 y_ratio = 1 else x_ratio = xres/1024 y_ratio = x_ratio end
+Comment: 0,0:00:00.00,0:00:00.00,Kar,,0000,0000,0000,code once,temp = {}
+Comment: 0,0:00:00.00,0:00:00.00,Kar,,0000,0000,0000,code once,function set_temp(ref,val) temp[ref] = val; return val; end
+Comment: 0,0:00:07.92,0:00:09.91,Kar,,0000,0000,0000,karaoke,{\k8}Ka{\k17}ze {\k20}wo {\k23}ki{\k17}zu {\k11}a{\k13}me {\k13}no {\k40}you {\k37}ni 
+Comment: 0,0:00:09.96,0:00:14.32,Kar,,0000,0000,0000,karaoke,{\k15}i{\k35}sshun {\k12}de {\k12}me{\k10}za{\k32}su {\k15}a{\k16}o{\k31}i {\k15}fu{\k13}mi{\k49}de{\k92} {\k12}yu{\k12}ke{\k12}ru {\k13}na{\k40}ra
+Dialogue: 0,0:00:07.77,0:00:09.93,Esub,,0000,0000,0000,,SUBTiTlES Soutitre Translation
+Dialogue: 0,0:00:09.96,0:00:14.32,Esub,,0000,0000,0000,,SUB Sttr Trans
+Dialogue: 0,0:00:14.32,0:00:16.32,Esub,,0000,0000,0000,,

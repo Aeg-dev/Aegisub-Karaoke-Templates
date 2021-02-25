@@ -1,0 +1,40 @@
+[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 480
+PlayResY: 308
+ScaledBorderAndShadow: yes
+Collisions: Normal
+Audio File: ?video
+Video File: ..\..\..\Videos\RealDownloader\รวม pv arashi\2005 [PV] ARASHI - Wish.mp4
+Video Aspect Ratio: 0
+Video Zoom: 8
+Video Position: 2350
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:21.49,Default,,0000,0000,0000,,
+Dialogue: 0,0:00:21.49,0:00:25.77,Default,,0000,0000,0000,,
+Dialogue: 0,0:00:25.77,0:00:29.27,Default,,0000,0000,0000,,Machi ni ai no uta
+Dialogue: 0,0:00:29.27,0:00:33.03,Default,,0000,0000,0000,,Nagarehajimetara
+Dialogue: 0,0:00:33.03,0:00:36.16,Default,,0000,0000,0000,,Hitobito wa
+Dialogue: 0,0:00:36.16,0:00:39.94,Default,,0000,0000,0000,,Yorisoiau 
+Dialogue: 0,0:00:39.94,0:00:44.00,Default,,0000,0000,0000,,Kagayaki no naka e
+Dialogue: 0,0:00:44.00,0:00:47.68,Default,,0000,0000,0000,,Boku wa kimi wo kitto
+Dialogue: 0,0:00:47.68,0:00:53.29,Default,,0000,0000,0000,,Tsureteittemiseruyo
+Dialogue: 0,0:00:53.29,0:01:10.00,Default,,0000,0000,0000,,
+Dialogue: 0,0:01:10.00,0:01:13.06,Default,,0000,0000,0000,,Koi wa todokanaitoki wo
+Dialogue: 0,0:01:13.06,0:01:16.21,Default,,0000,0000,0000,,Keikensuru uchini 
+Dialogue: 0,0:01:16.21,0:01:18.21,Default,,0000,0000,0000,,Tsuyoku natte
+Dialogue: 0,0:01:18.21,0:01:20.02,Default,,0000,0000,0000,,Yuku mono dane
+Dialogue: 0,0:01:20.02,0:01:24.47,Default,,0000,0000,0000,,Setsunai mune sae
+Dialogue: 0,0:01:24.47,0:01:27.78,Default,,0000,0000,0000,,Kimi ni niai no otoko ni
+Dialogue: 0,0:01:27.78,0:01:30.97,Default,,0000,0000,0000,,Naru made kono boku ni 
+Dialogue: 0,0:01:30.97,0:01:34.51,Default,,0000,0000,0000,,Furimuite wa kurenai mitai
+Dialogue: 0,0:01:34.51,0:01:37.98,Default,,0000,0000,0000,,Tekibishii kimi sa
+Dialogue: 0,0:01:37.98,0:01:39.98,Default,,0000,0000,0000,,

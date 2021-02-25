@@ -1,0 +1,56 @@
+[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 640
+PlayResY: 480
+ScaledBorderAndShadow: yes
+Video Aspect Ratio: 0
+Video Zoom: 6
+Video Position: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:18.21,0:00:21.78,Default,,0000,0000,0000,karaoke,{\k24}{\k35}He {\k23}is {\k25}a {\k35}hust{\k25}ler, {\k29}he's {\k23}no {\k34}good {\k24}at {\k80}all
+Dialogue: 0,0:00:22.51,0:00:27.11,Default,,0000,0000,0000,karaoke,{\k41}{\k21}He {\k35}is {\k14}a {\k41}los{\k30}er, {\k26}he’s {\k25}a {\kf56}bum, {\kf56}bum, {\kf43}bum, {\kf72}bum
+Dialogue: 0,0:00:27.24,0:00:30.64,Default,,0000,0000,0000,karaoke,{\k11}{\k28}He {\k28}lies, {\k26}he {\k24}bluffs, {\k29}he's {\k33}un{\k25}re{\k30}li{\k27}a{\k79}ble
+Dialogue: 0,0:00:31.11,0:00:35.98,Default,,0000,0000,0000,karaoke,{\k70}{\k17}He {\k36}is {\k29}a {\k32}suck{\k24}er {\k28}with {\k27}a {\kf55}gun, {\kf55}gun, {\kf43}gun, {\kf71}gun
+Dialogue: 0,0:00:35.98,0:00:39.58,Default,,0000,0000,0000,karaoke,{\k26}{\k27}I {\k29}know {\k26}you {\k31}told {\k22}me, {\k25}I {\k32}should {\k32}stay {\k28}a{\k82}way
+Dialogue: 0,0:00:40.14,0:00:44.94,Default,,0000,0000,0000,karaoke,{\k49}{\k33}I {\k29}know {\k25}you {\k37}said, {\k19}he’s {\k29}just {\k27}a {\k54}dog {\k60}as{\k118}tray
+Dialogue: 0,0:00:44.94,0:00:49.04,Default,,0000,0000,0000,karaoke,{\k20}{\k28}He {\k24}is {\k28}a {\k30}re{\k32}bel {\k25}with {\k25}a {\k31}taint{\k26}ed {\k141}heart
+Dialogue: 0,0:00:49.24,0:00:52.44,Default,,0000,0000,0000,karaoke,{\k33}{\k26}And {\k29}e{\k29}ven {\k33}I {\k24}know {\k24}this {\k34}a'int {\k88}smart
+Dialogue: 0,0:00:53.21,0:00:57.41,Copy of Default,,0000,0000,0000,karaoke,{\k17}{\k36}But {\kf55}Mama {\k32}I'm {\k24}in {\k52}love {\k32}with {\k22}a {\kf150}Criminal
+Dialogue: 0,0:00:57.54,0:01:02.54,Copy of Default,,0000,0000,0000,karaoke,{\k59}{\k32}And {\k26}this {\k30}type {\k27}of {\k56}love, {\k29}is{\k27}n't {\k27}ra{\k24}tion{\k45}al, {\k16}it's {\k29}phy{\k35}sic{\k38}al
+Dialogue: 0,0:01:02.64,0:01:06.31,Copy of Default,,0000,0000,0000,karaoke,{\k6}{\kf48}Mama, {\k28}please {\k27}don't {\k57}cry, {\k26}I {\k28}will {\k31}be {\k23}al{\k93}right
+Dialogue: 0,0:01:06.88,0:01:11.98,Copy of Default,,0000,0000,0000,karaoke,{\k18}{\k31}All {\k25}rea{\k28}son {\k15}a{\k68}side, {\k24}I {\k32}just {\k27}can't {\k28}de{\k43}ny, {\k43}love {\k25}the {\k103}guy
+Dialogue: 0,0:01:20.24,0:01:24.04,Default,,0000,0000,0000,karaoke,{\k44}{\k25}He {\k30}is {\k27}a {\k28}vil{\k25}lain {\k34}of {\k26}the {\k30}de{\k26}vil's {\k85}law
+Dialogue: 0,0:01:24.81,0:01:29.38,Default,,0000,0000,0000,karaoke,{\k31}{\k25}He {\k30}is {\k31}a {\k30}kil{\k26}ler {\k25}just {\k27}for {\kf56}fun {\kf55}fun {\kf55}fun {\kf66}fun
+Dialogue: 0,0:01:29.38,0:01:32.91,Default,,0000,0000,0000,karaoke,{\k19}{\k24}That {\k32}mans {\k29}a {\k22}snitch {\k29}and {\k36}un{\k23}pre{\k30}dict{\k26}a{\k83}ble
+Dialogue: 0,0:01:33.24,0:01:38.28,Default,,0000,0000,0000,karaoke,{\k78}{\k26}He's {\k28}got {\k27}no {\k29}con{\k26}science, {\k30}he {\k28}got {\kf52}none {\kf57}none {\kf44}none {\kf79}none
+Dialogue: 0,0:01:38.31,0:01:45.64,Default,,0000,0000,0000,karaoke,{\k0}{\kf185}All {\k23}I {\kf184}know, {\k32}should {\k34}let {\kf138}go {\k59}but {\k78}no
+Dialogue: 0,0:01:46.18,0:01:51.61,Default,,0000,0000,0000,karaoke,{\k60}{\k57}'Cause {\k53}he's {\k30}a {\k31}bad {\k27}boy {\k26}with {\k25}a {\k37}taint{\k22}ed {\k175}heart
+Dialogue: 0,0:01:51.68,0:01:54.74,Default,,0000,0000,0000,karaoke,{\k14}{\k24}And {\k29}e{\k26}ven {\k38}I {\k19}know {\k29}this {\k27}ain't {\k100}smart
+Dialogue: 0,0:01:55.44,0:01:59.58,Copy of Default,,0000,0000,0000,karaoke,{\k17}{\k36}But {\kf55}Mama {\k32}I'm {\k24}in {\k52}love {\k32}with {\k22}a {\kf150}Criminal
+Dialogue: 0,0:01:59.84,0:02:04.78,Copy of Default,,0000,0000,0000,karaoke,{\k59}{\k32}And {\k26}this {\k30}type {\k27}of {\k56}love, {\k29}is{\k27}n't {\k27}ra{\k24}tion{\k45}al, {\k16}it's {\k29}phy{\k35}sic{\k38}al
+Dialogue: 0,0:02:04.84,0:02:08.58,Copy of Default,,0000,0000,0000,karaoke,{\k6}{\kf48}Mama, {\k28}please {\k27}don't {\k57}cry, {\k26}I {\k28}will {\k31}be {\k23}al{\k93}right
+Dialogue: 0,0:02:08.84,0:02:14.11,Copy of Default,,0000,0000,0000,karaoke,{\k46}{\k28}All {\k23}rea{\k33}son {\k27}a{\k53}side, {\k28}I {\k27}just {\k30}can't {\k25}de{\k46}ny, {\k39}love {\k28}the {\k94}guy
+Dialogue: 0,0:02:14.44,0:02:17.18,Copy of Default,,0000,0000,0000,karaoke,{\k12}{\k15}And {\k15}he's {\k39}got {\k52}my {\k141}name
+Dialogue: 0,0:02:18.28,0:02:22.78,Copy of Default,,0000,0000,0000,karaoke,{\k37}{\kf147}Tattooed {\k57}on {\k20}his {\k35}arm {\k27}his {\k24}luc{\k38}ky {\k65}charm
+Dialogue: 0,0:02:22.78,0:02:25.81,Copy of Default,,0000,0000,0000,karaoke,{\k56}{\k22}So {\k18}I {\k13}guess {\k26}it's {\kf168}okay
+Dialogue: 0,0:02:25.98,0:02:28.34,Copy of Default,,0000,0000,0000,karaoke,{\k21}{\kf31}He's {\k25}with {\kf159}me
+Dialogue: 0,0:02:31.88,0:02:34.71,Copy of Default,,0000,0000,0000,karaoke,{\k45}{\k14}And {\k20}I {\k33}hear {\k25}peo{\k32}ple {\kf114}talk
+Dialogue: 0,0:02:35.48,0:02:40.64,Copy of Default,,0000,0000,0000,karaoke,{\k94}{\k16}Try{\k69}ing {\k59}to {\k54}make {\k22}re{\k40}marks, {\k25}keep {\k31}us {\k14}a{\k92}part
+Dialogue: 0,0:02:40.98,0:02:46.11,Copy of Default,,0000,0000,0000,karaoke,{\k37}{\k15}But {\k30}I {\k16}don't {\k27}e{\k14}ven {\k158}hear {\kf35}I {\kf25}don't {\kf156}care
+Dialogue: 0,0:02:57.54,0:03:01.98,Copy of Default,,0000,0000,0000,karaoke,{\k17}{\k36}Cause {\kf55}Mama {\k32}I'm {\k24}in {\k52}love {\k32}with {\k22}a {\kf150}Criminal
+Dialogue: 0,0:03:02.38,0:03:07.01,Copy of Default,,0000,0000,0000,karaoke,{\k24}{\k27}And {\k28}this {\k29}type {\k27}of {\k51}love, {\k30}is{\k32}n't {\k25}ra{\k27}tion{\k43}al, {\k15}it's {\k29}phy{\k22}sic{\k53}al
+Dialogue: 0,0:03:07.08,0:03:10.81,Copy of Default,,0000,0000,0000,karaoke,{\k0}{\kf54}Mama, {\k28}please {\k27}don't {\k57}cry, {\k26}I {\k28}will {\k31}be {\k23}al{\k93}right
+Dialogue: 0,0:03:10.91,0:03:15.94,Copy of Default,,0000,0000,0000,karaoke,{\k46}{\k28}All {\k23}rea{\k33}son {\k27}a{\k53}side, {\k28}I {\k27}just {\k30}can't {\k25}de{\k46}ny, {\k39}love {\k28}the {\k94}guy
+Dialogue: 0,0:03:15.94,0:03:19.94,Copy of Default,,0000,0000,0000,karaoke,{\k0}{\kf55}Mama {\k31}I'm {\k34}in {\k42}love {\k31}with {\k29}a {\kf180}Criminal
+Dialogue: 0,0:03:20.24,0:03:24.74,Copy of Default,,0000,0000,0000,karaoke,{\k14}{\k26}And {\k30}this {\k28}type {\k29}of {\k52}love, {\k28}is{\k31}n't {\k26}ra{\k27}tion{\k44}al, {\k15}it's {\k27}phy{\k23}sic{\k51}al
+Dialogue: 0,0:03:24.91,0:03:28.54,Copy of Default,,0000,0000,0000,karaoke,{\k0}{\kf54}Mama, {\k28}please {\k27}don't {\k57}cry, {\k26}I {\k28}will {\k31}be {\k23}al{\k93}right
+Dialogue: 0,0:03:28.58,0:03:34.61,Copy of Default,,0000,0000,0000,karaoke,{\k86}{\k20}All {\k18}rea{\k32}son {\k26}a{\k55}side, {\k29}I {\k26}just {\k30}can't {\k24}de{\k45}ny, {\k42}love {\k23}the {\k71}guy
+Dialogue: 0,0:00:00.00,0:00:05.00,Default,,0000,0000,0000,,

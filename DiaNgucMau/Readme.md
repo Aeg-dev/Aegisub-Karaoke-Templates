@@ -37,9 +37,12 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Waves.ass,     黄色❤波纹,    https://youtu.be/jaS8nOHL0bc
 + ECG.ass,      心电图跳动+音乐🎵符号, https://youtu.be/xqkUihI_AtE
 + thunder.ass,  雷击单词+雨滴+落水波纹, https://youtu.be/CadvKYaUcsc
-
++ Cupidon.ass,  单词变背景❤爱心+白色翅膀-飞走, https://youtu.be/U04bFZUpQ7o
++ L.E.D.ass, 从右向左小球移动轨迹, https://youtu.be/Lr-na73Qs1c
 + L.E.D-v2.ass, 上下彩虹方块条+彩虹字, https://youtu.be/YM2ePVoWKXY
++ Tornado.ass, 单词旋转消失, https://youtu.be/HRfmf4yV-hQ
 + Ever-Lasting-Friends.ass, 蓝色荧光棒打call+⭐星星消失, https://youtu.be/jBBoxvdiPPY
 + Milky-way.ass,    下雪+单词变雪-下落, https://youtu.be/BbyM_jGSSs8
 + Solar-Pillar.ass, 竖向蓝色光柱, https://youtu.be/5CVb_NeFCR4
 + Circle.ass,    红色❤移动+单词消失-爱心圈扩散, https://youtu.be/ms1hRkX4qt0
+

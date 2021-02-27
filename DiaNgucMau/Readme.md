@@ -25,5 +25,5 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Spiral.ass,    红/蓝纸风车旋转,  https://youtu.be/FMofUIG9dgQ
 + Leaf.ass,      🍁褐色枫叶飘落,  https://youtu.be/Cy7yVXt3Ng8
 + Falling-and-silde.ass, 文字掉下滑走, https://youtu.be/0yNNkai_xvs
-
++ Cassoipeia.ass,  奇怪的红色W+萤火虫飞舞, https://youtu.be/h96HnawIE8E
 + Falling-to-water.ass, 文字下落掉入水中, 

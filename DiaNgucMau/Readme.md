@@ -36,3 +36,4 @@ DiaNgucMau - Aegisub Karaoke Effect
 + stars.ass,     流星单词弹跳+⭐五角星背景, https://youtu.be/nDPIMKPR9Ps
 + Waves.ass,     黄色❤波纹,    https://youtu.be/jaS8nOHL0bc
 + ECG.ass,      心电图跳动+音乐🎵符号, https://youtu.be/xqkUihI_AtE
++ thunder.ass,  雷击单词+雨滴+落水波纹, https://youtu.be/CadvKYaUcsc

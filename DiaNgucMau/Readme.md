@@ -9,3 +9,4 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Sweety.ass,   红色❤,         https://youtu.be/4S0TsvZIKAc
 + Shining.ass,  (十字)小星星闪烁+单词闪烁, https://youtu.be/LKEOw1VtuBs
 + Shining2.ass,  (十字)小星星闪烁+单词放大跳动,
++ Clover.ass,   🍀四叶草背景,   https://youtu.be/5g6VL-z7lGY

@@ -19,7 +19,7 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Shining Star.ass, 尖刺爆炸/星星闪烁背景, https://youtu.be/hS-nHWfeOb4
 + DarkStorm.ass, 黑色风暴/黑色漩涡, https://youtu.be/AFE9nKxut-0
 + Fake#2.ass,    十字闪光,      https://youtu.be/eGbocHkHhI4
-+ Star-v3.ass,   空心⭐旋转,   https://youtu.be/ZYYPpLJ9ROI
++ Star-v3.ass,   空心☆旋转,   https://youtu.be/ZYYPpLJ9ROI
 + Feather.ass,   羽毛四散飞舞,  https://youtu.be/01lwV6XAYpc
 + Rain.ass,      雨滴(流星)落下+水波纹, https://youtu.be/4LFC_TWylQI
 + Spiral.ass,    红/蓝纸风车旋转,  https://youtu.be/FMofUIG9dgQ
@@ -28,3 +28,4 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Cassoipeia.ass,  奇怪的红色W+萤火虫飞舞, https://youtu.be/h96HnawIE8E
 + lightning.ass,    蓝色网状雷电,   https://youtu.be/TBXB7DywIoc
 + Falling-to-water.ass, 文字下落掉入水中, 
++ Waves.ass,     黄色❤波纹,    https://youtu.be/jaS8nOHL0bc

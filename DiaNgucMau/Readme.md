@@ -27,6 +27,11 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Falling-and-silde.ass, 文字掉下滑走, https://youtu.be/0yNNkai_xvs
 + Cassoipeia.ass,  奇怪的红色W+萤火虫飞舞, https://youtu.be/h96HnawIE8E
 + lightning.ass,    蓝色网状雷电,   https://youtu.be/TBXB7DywIoc
-+ Falling-to-water.ass, 文字下落掉入水中, 
++ KFC.ass,        KFC蛋卷+鸡腿,     https://youtu.be/rqFv7UoYqlg
++ flowers.ass,   绿枫叶+绿/黄/褐色/红五瓣花, https://youtu.be/oJlTzR3INY8
++ angel.ass,     单词变天使👼:白色翅膀头顶光环, https://youtu.be/RJzM0TzbJtg
++ Devil.ass,     单词变恶魔:蝙蝠翅膀🦇+爱心眼骷髅头💀, https://youtu.be/Gg2C7vA65eU
 + SnowFlake.ass, 白色雪花❄, https://youtu.be/BVTlDNoaQ9I
++ Falling-to-water.ass, 文字下落掉入水中, https://youtu.be/SPzIfNs0yT4
++ stars.ass,     流星单词弹跳+⭐五角星背景, https://youtu.be/nDPIMKPR9Ps
 + Waves.ass,     黄色❤波纹,    https://youtu.be/jaS8nOHL0bc

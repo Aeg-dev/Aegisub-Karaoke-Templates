@@ -22,3 +22,4 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Star-v3.ass,   空心⭐旋转,   https://youtu.be/ZYYPpLJ9ROI
 + Feather.ass,   羽毛四散飞舞,  https://youtu.be/01lwV6XAYpc
 + Rain.ass,      雨滴(流星)落下+水波纹, https://youtu.be/4LFC_TWylQI
++ Spiral.ass,    红/蓝纸风车旋转,  https://youtu.be/FMofUIG9dgQ

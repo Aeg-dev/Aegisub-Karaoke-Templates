@@ -12,3 +12,4 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Clover.ass,   🍀四叶草背景,   https://youtu.be/5g6VL-z7lGY
 + Butterfly.ass, 黑色🦋飞舞背景, https://youtu.be/4cO3QD-fHwA
 + Snow.ass,      雪球四散背景,   https://youtu.be/U0uQktj0Tno
++ Bang!.ass,     爆炸背景,      https://youtu.be/HuEX3AXt8-4

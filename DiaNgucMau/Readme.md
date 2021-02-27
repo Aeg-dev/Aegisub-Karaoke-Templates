@@ -1,6 +1,8 @@
 DiaNgucMau - Aegisub Karaoke Effect
 ===================================
 
+偏字幕背景图案
+
 [特效效果视频预览 @Youtube](https://youtube.com/playlist?list=PLWiiO7FHwvr_7Mm2-miKu9XHbDSd716Gc)
 
 ## 特效简介
@@ -19,3 +21,4 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Fake#2.ass,    十字闪光,      https://youtu.be/eGbocHkHhI4
 + Star-v3.ass,   空心⭐旋转,   https://youtu.be/ZYYPpLJ9ROI
 + Feather.ass,   羽毛四散飞舞,  https://youtu.be/01lwV6XAYpc
++ Rain.ass,      雨滴(流星)落下+水波纹, https://youtu.be/4LFC_TWylQI

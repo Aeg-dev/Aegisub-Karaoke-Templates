@@ -24,3 +24,6 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Rain.ass,      雨滴(流星)落下+水波纹, https://youtu.be/4LFC_TWylQI
 + Spiral.ass,    红/蓝纸风车旋转,  https://youtu.be/FMofUIG9dgQ
 + Leaf.ass,      🍁褐色枫叶飘落,  https://youtu.be/Cy7yVXt3Ng8
++ Falling-and-silde.ass, 文字掉下滑走, https://youtu.be/0yNNkai_xvs
+
++ Falling-to-water.ass, 文字下落掉入水中, 

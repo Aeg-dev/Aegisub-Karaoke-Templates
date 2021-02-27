@@ -11,4 +11,4 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Shining2.ass,  (十字)小星星闪烁+单词放大跳动,
 + Clover.ass,   🍀四叶草背景,   https://youtu.be/5g6VL-z7lGY
 + Butterfly.ass, 黑色🦋飞舞背景, https://youtu.be/4cO3QD-fHwA
-+ 
++ Snow.ass,      雪球四散背景,   https://youtu.be/U0uQktj0Tno

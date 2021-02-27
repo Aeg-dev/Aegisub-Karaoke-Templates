@@ -17,3 +17,5 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Shining Star.ass, 尖刺爆炸/星星闪烁背景, https://youtu.be/hS-nHWfeOb4
 + DarkStorm.ass, 黑色风暴/黑色漩涡, https://youtu.be/AFE9nKxut-0
 + Fake#2.ass,    十字闪光,      https://youtu.be/eGbocHkHhI4
++ Star-v3.ass,   空心⭐旋转,   https://youtu.be/ZYYPpLJ9ROI
+

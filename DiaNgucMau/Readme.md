@@ -14,3 +14,4 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Snow.ass,      雪球四散背景,   https://youtu.be/U0uQktj0Tno
 + Bang!.ass,     爆炸背景,      https://youtu.be/HuEX3AXt8-4
 + Shining Star.ass, 尖刺爆炸/星星闪烁背景, https://youtu.be/hS-nHWfeOb4
++ DarkStorm.ass, 黑色风暴/黑色漩涡, https://youtu.be/AFE9nKxut-0

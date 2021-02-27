@@ -38,4 +38,6 @@ DiaNgucMau - Aegisub Karaoke Effect
 + ECG.ass,      心电图跳动+音乐🎵符号, https://youtu.be/xqkUihI_AtE
 + thunder.ass,  雷击单词+雨滴+落水波纹, https://youtu.be/CadvKYaUcsc
 
+
++ Solar-Pillar.ass, 竖向蓝色光柱, https://youtu.be/5CVb_NeFCR4
 + Circle.ass,    红色❤移动+单词消失-爱心圈扩散, https://youtu.be/ms1hRkX4qt0

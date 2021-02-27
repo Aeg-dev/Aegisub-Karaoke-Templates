@@ -28,4 +28,5 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Cassoipeia.ass,  奇怪的红色W+萤火虫飞舞, https://youtu.be/h96HnawIE8E
 + lightning.ass,    蓝色网状雷电,   https://youtu.be/TBXB7DywIoc
 + Falling-to-water.ass, 文字下落掉入水中, 
++ SnowFlake.ass, 白色雪花❄, https://youtu.be/BVTlDNoaQ9I
 + Waves.ass,     黄色❤波纹,    https://youtu.be/jaS8nOHL0bc

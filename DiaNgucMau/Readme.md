@@ -35,3 +35,4 @@ DiaNgucMau - Aegisub Karaoke Effect
 + Falling-to-water.ass, 文字下落掉入水中, https://youtu.be/SPzIfNs0yT4
 + stars.ass,     流星单词弹跳+⭐五角星背景, https://youtu.be/nDPIMKPR9Ps
 + Waves.ass,     黄色❤波纹,    https://youtu.be/jaS8nOHL0bc
++ ECG.ass,      心电图跳动+音乐🎵符号, https://youtu.be/xqkUihI_AtE

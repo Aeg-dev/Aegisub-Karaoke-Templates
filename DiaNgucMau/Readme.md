@@ -5,5 +5,5 @@ DiaNgucMau - Aegisub Karaoke Effect
 
 ## 特效简介
 
-+ Skull.ass,    骷髅头特效, https://youtu.be/8JHoyXcsYQU
-+ Sweety.ass,   红色❤,     https://youtu.be/4S0TsvZIKAc
++ Skull.ass,    可爱骷髅头💀,   https://youtu.be/8JHoyXcsYQU
++ Sweety.ass,   红色❤,         https://youtu.be/4S0TsvZIKAc

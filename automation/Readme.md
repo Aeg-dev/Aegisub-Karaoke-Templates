@@ -22,3 +22,9 @@ ref:
 ## 压制视频
 
 运行 `encode.bat`
+
+
+## 生成动图
+
++ `gen-gif.cmd`
++ `gen-webp.cmd`

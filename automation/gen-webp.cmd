@@ -1,0 +1,1 @@
+ffmpeg -y  -i fx-540p.mp4  -an -vcodec libwebp -vf crop=960:270:0:135 -s 480:135  -lossless 1 -loop 0 -preset text  fx.webp

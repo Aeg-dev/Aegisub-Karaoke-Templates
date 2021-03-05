@@ -1,0 +1,1 @@
+ffmpeg -y -i fx-540p.mp4 -f gif  -an -vf crop=960:270:0:135 -s 480:135 -loop 0   fx.gif

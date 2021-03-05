@@ -1,5 +1,10 @@
-*.mp4
-*.lwi
-
+# temp input
 *.ass
 !empty-template.ass
+
+
+# Output
+*.mp4
+*.lwi
+*.gif
+*.webp

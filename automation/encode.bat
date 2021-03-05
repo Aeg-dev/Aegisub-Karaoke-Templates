@@ -1,0 +1,1 @@
+F:\vTools\VapourSynth64-Portable-R52\VSPipe.exe --y4m add-ass.vpy - | ffmpeg -y -i - -preset slow -crf 18 fx.mp4

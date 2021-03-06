@@ -15,7 +15,7 @@ page_title = 'ASS FX Flow'
 def gen_pages(img_list, idx=2, is_last_page=True):
     global env
     template = env.get_template('page.j2')
-    next_page_link = f'html/page{idx + 1}.html'
+    next_page_link = f'page{idx + 1}.html'
     
     with open(f"html/page{idx}.html", 'w') as fout:
         html_content = template.render(
@@ -80,14 +80,15 @@ imgs = imgs[steps:]
 total_pages = 100
 img_count = 0
 for page in range(1, total_pages + 1):
-    if page==total_pages or img_count>=len(imgs):
+    img_list = imgs[ (page*steps) : ((page+1)*steps) ]
+    rpath = [ '../../_vout/' + p.name for p in img_list ]
+    img_count = img_count + len(rpath)
+
+    if page==total_pages or img_count>=len(imgs) or len(rpath)==0:
         is_last_page = True 
     else:
         is_last_page = False
 
-    img_list = imgs[ (page*steps) : ((page+1)*steps) ]
-    rpath = [ '../../_vout/' + p.name for p in img_list ]
-    img_count = img_count + len(rpath)
     gen_pages(rpath, idx=(page+1), is_last_page=is_last_page)
 
     if is_last_page:

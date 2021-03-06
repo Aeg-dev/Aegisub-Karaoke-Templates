@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" class="export">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{{ page_head_title }}</title>
+  <link rel="stylesheet" href="{{ inf_css_path }}" media="screen">
+</head>
+
+
+<body>
+
+  <ol class="site-nav">
+    <li class="site-nav__item site-nav__item--homepage">
+      <a href="{{ page_to_index_url }}">{{ index_page_name }}</a>
+    </li>
+  </ol>
+
+  <div class="main">
+    <div class="container container--wide">
+
+      <h1 class="page-title">{{ page_title }}</h1>
+
+      <div class="image-grid are-images-unloaded" data-js="image-grid">
+        <div class="image-grid__col-sizer"></div>
+        <div class="image-grid__gutter-sizer"></div>
+
+      {% for img in img_list %}
+        <div class="image-grid__item">
+          <img class="image-grid__image" src="{{ img }}">
+        </div>
+      {% endfor %}
+
+      </div>
+
+      <div class="scroller-status">
+        <div class="loader-ellips infinite-scroll-request">
+          <span class="loader-ellips__dot"></span>
+          <span class="loader-ellips__dot"></span>
+          <span class="loader-ellips__dot"></span>
+          <span class="loader-ellips__dot"></span>
+        </div>
+        <p class="scroller-status__message infinite-scroll-last">End of content</p>
+        <p class="scroller-status__message infinite-scroll-error">No more pages to load</p>
+      </div>
+
+    {% if is_last_page %}
+      <!-- end -->
+    {% else %}
+      <p class="pagination">
+        <a class="pagination__next" href="{{ next_page_link }}">Next page</a>
+      </p>
+    {% endif %}
+
+      <footer class="full-page-demo-footer"></footer>
+
+    </div>
+  </div>
+
+
+  <script src="{{ inf_js_path }}"></script>
+
+</body>
+
+</html>

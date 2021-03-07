@@ -32,9 +32,11 @@
         <div class="image-grid__col-sizer"></div>
         <div class="image-grid__gutter-sizer"></div>
 
-      {% for img in img_list %}
+      {% for (img, ass) in img_list %}
         <div class="image-grid__item">
-          <img class="image-grid__image" src="{{ img }}">
+          <a href="{{ ass }}">
+            <img class="image-grid__image" src="{{ img }}">
+          </a>
         </div>
       {% endfor %}
 

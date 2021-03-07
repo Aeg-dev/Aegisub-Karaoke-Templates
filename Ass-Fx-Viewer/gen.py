@@ -65,7 +65,7 @@ gifs = list(img_root_path.glob('*.gif'))
 imgs = gifs
 
 steps = 12
-rpath = [ 'img/' + p.name for p in imgs[0:steps] ]
+rpath = [ ('img/' + p.stem + '.gif', 'ass/' + p.stem + '.ass') for p in imgs[0:steps] ]
 gen_main_page(rpath, is_last_page=False)
 imgs = imgs[steps:]
 
@@ -74,7 +74,7 @@ total_pages = 100
 img_count = 0
 for page in range(1, total_pages + 1):
     img_list = imgs[ (page*steps) : ((page+1)*steps) ]
-    rpath = [ 'img/' + p.name for p in img_list ]
+    rpath = [ ('img/' + p.stem + '.gif', 'ass/' + p.stem + '.ass') for p in img_list ]
     img_count = img_count + len(rpath)
 
     if page==total_pages or img_count>=len(imgs) or len(rpath)==0:

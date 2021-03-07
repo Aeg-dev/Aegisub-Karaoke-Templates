@@ -4,17 +4,17 @@ import pathlib
 
 
 env = Environment(loader=FileSystemLoader('./template'))
+template = env.get_template('page.j2')
 page_head_title   = 'ASS FX Template Viewer'
-inf_css_path = '../infinite-scroll-docs.css'
-inf_js_path  = '../infinite-scroll-docs.min.js'
-page_to_index_url = '../index.html'
+inf_css_path = 'css-js/infinite-scroll-docs.css'
+inf_js_path  = 'css-js/infinite-scroll-docs.min.js'
+page_to_index_url = 'index.html'
 index_page_name = 'Main Page / TOP'
 page_title = 'ASS FX Flow'
 
 
 def gen_pages(img_list, idx=2, is_last_page=True):
-    global env
-    template = env.get_template('page.j2')
+    global template
     next_page_link = f'page{idx + 1}.html'
     
     with open(f"html/page{idx}.html", 'w') as fout:
@@ -36,14 +36,10 @@ def gen_pages(img_list, idx=2, is_last_page=True):
 
 
 def gen_main_page(img_list, idx=1, is_last_page=True):
-    global env
-    template = env.get_template('page.j2')
-    inf_css_path = 'infinite-scroll-docs.css'
-    inf_js_path  = 'infinite-scroll-docs.min.js'
-    page_to_index_url = 'index.html'
-    next_page_link = f'html/page{idx + 1}.html'
+    global template
+    next_page_link = f'page{idx + 1}.html'
     
-    with open("index.html", 'w') as fout:
+    with open("html/index.html", 'w') as fout:
         html_content = template.render(
             # CSS/JS
             inf_css_path=inf_css_path,
@@ -61,18 +57,15 @@ def gen_main_page(img_list, idx=1, is_last_page=True):
         fout.write(html_content)
 
 
-def real_path(path):
-    return [ '../_vout/' + p.name for p in path ]
-
 # if __name__ == "__main__":
 
-img_root_path = Path(r'F:\subt\Aegisub-Karaoke-Templates\_vout')
+img_root_path = Path(r'F:\subt\Aegisub-Karaoke-Templates\Ass-Fx-Viewer\html\img')
 gifs = list(img_root_path.glob('*.gif'))
-webps = list(img_root_path.glob('*.webp'))
+# webps = list(img_root_path.glob('*.webp'))
 imgs = gifs
 
 steps = 12
-rpath = [ '../_vout/' + p.name for p in imgs[0:steps] ]
+rpath = [ 'img/' + p.name for p in imgs[0:steps] ]
 gen_main_page(rpath, is_last_page=False)
 imgs = imgs[steps:]
 
@@ -81,7 +74,7 @@ total_pages = 100
 img_count = 0
 for page in range(1, total_pages + 1):
     img_list = imgs[ (page*steps) : ((page+1)*steps) ]
-    rpath = [ '../../_vout/' + p.name for p in img_list ]
+    rpath = [ 'img/' + p.name for p in img_list ]
     img_count = img_count + len(rpath)
 
     if page==total_pages or img_count>=len(imgs) or len(rpath)==0:

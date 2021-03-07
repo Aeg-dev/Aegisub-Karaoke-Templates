@@ -1,0 +1,1 @@
+START "" /B mongoose.exe >> mg.log
